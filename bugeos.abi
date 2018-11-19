@@ -1,0 +1,45 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Sun Nov 18 21:21:41 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "tbet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "player1",
+                    "type": "name"
+                },
+                {
+                    "name": "player2",
+                    "type": "name"
+                },
+                {
+                    "name": "status",
+                    "type": "uint8"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [],
+    "tables": [
+        {
+            "name": "tbet",
+            "type": "tbet",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
