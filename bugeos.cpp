@@ -10,6 +10,7 @@ void bugeos::transfer(const name &from, const name &to, const asset &quantity, c
         if (exist)
         {
             auto itr = _tbets.find(key);
+            eosio_assert(itr->status == 1, "the blockchain is busy, please try again"); // I've tried this , it doesn't work
             _tbets.modify(itr, get_self(), [&](auto &p){
                 p.timestamp = current_time();
                 p.status = 2; // matched
